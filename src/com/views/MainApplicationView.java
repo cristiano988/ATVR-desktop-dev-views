@@ -28,7 +28,7 @@ public class MainApplicationView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        mainJpanel = new javax.swing.JPanel();
+        mainPanel = new javax.swing.JPanel();
         barMenu = new javax.swing.JMenuBar();
         menuFile = new javax.swing.JMenu();
         menuFileNew = new javax.swing.JMenu();
@@ -43,14 +43,14 @@ public class MainApplicationView extends javax.swing.JFrame {
         setTitle("Score System");
         setPreferredSize(new java.awt.Dimension(800, 600));
 
-        javax.swing.GroupLayout mainJpanelLayout = new javax.swing.GroupLayout(mainJpanel);
-        mainJpanel.setLayout(mainJpanelLayout);
-        mainJpanelLayout.setHorizontalGroup(
-            mainJpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 360, Short.MAX_VALUE)
         );
-        mainJpanelLayout.setVerticalGroup(
-            mainJpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        mainPanelLayout.setVerticalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 245, Short.MAX_VALUE)
         );
 
@@ -97,11 +97,11 @@ public class MainApplicationView extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainJpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(mainJpanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(mainPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -118,9 +118,7 @@ public class MainApplicationView extends javax.swing.JFrame {
                 break;
                 
             case "Exit":
-                TournamentEntryView tournament = new TournamentEntryView();
-        tournament.setSize(getContentPane().getSize());
-        setContentPane(tournament);
+                System.exit(0);
                 break;
                 
             default:
@@ -171,7 +169,7 @@ public class MainApplicationView extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar barMenu;
-    private javax.swing.JPanel mainJpanel;
+    private javax.swing.JPanel mainPanel;
     private javax.swing.JMenu menuEdit;
     private javax.swing.JMenu menuEditNewTournament;
     private javax.swing.JMenu menuFile;

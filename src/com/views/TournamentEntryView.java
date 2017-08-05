@@ -27,10 +27,15 @@ public class TournamentEntryView extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnTechnique = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
-        jButton1.setText("Technique");
+        btnTechnique.setText("Technique");
+        btnTechnique.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                startTechnique(evt);
+            }
+        });
 
         jButton2.setText("Combat");
 
@@ -40,7 +45,7 @@ public class TournamentEntryView extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(53, 53, 53)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
+                .addComponent(btnTechnique, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                 .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
                 .addGap(61, 61, 61))
@@ -50,15 +55,21 @@ public class TournamentEntryView extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(131, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
+                    .addComponent(btnTechnique, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))
                 .addGap(108, 108, 108))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void startTechnique(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_startTechnique
+        // TODO add your handling code here:
+        TournamentMainView tournament = new TournamentMainView();
+        tournament.setVisible(true);
+    }//GEN-LAST:event_startTechnique
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnTechnique;
     private javax.swing.JButton jButton2;
     // End of variables declaration//GEN-END:variables
 }

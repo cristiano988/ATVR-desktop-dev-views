@@ -14,6 +14,7 @@ public class GetWebIDView extends javax.swing.JFrame {
     private MainApplicationView caller = null;
     
     public GetWebIDView(MainApplicationView caller){
+        this();
         this.caller = caller;
     }
 
@@ -89,7 +90,7 @@ public class GetWebIDView extends javax.swing.JFrame {
     private void getTournamentByID(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_getTournamentByID
         // TODO add your handling code here:
         caller.startTournamentByID(0);
-        //this.dispose();
+        this.dispose();
     }//GEN-LAST:event_getTournamentByID
 
     /**
